@@ -6,12 +6,9 @@ use rand::distributions::Alphanumeric;
 use rand::Rng;
 use anyhow::Context;
 use dotenv::dotenv;
-// use uuid::Uuid;
 
 use kafka::consumer::{Consumer, FetchOffset, GroupOffsetStorage};
-// use sqlx::postgres::{PgQueryAs, PgPool};
 use sqlx::postgres::PgPool;
-// use serde_json::{Result, Value};
 use serde_json::{Value};
 
 
@@ -101,7 +98,5 @@ async fn main() -> anyhow::Result<()> {
         }
         consumer.commit_consumed().unwrap();
     }
-
-    //Ok(())
 }
 

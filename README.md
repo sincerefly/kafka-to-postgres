@@ -25,9 +25,7 @@ cargo build && cargo run
 ### 3）Message Rules
 
 Message **mush** be json string, with *tablename* and *data* params
-**required**.
-
-eg:
+**required**. eg:
 
 ```json
 {
